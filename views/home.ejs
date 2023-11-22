@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telegram ChatGPT</title>
+</head>
+<body>
+    <% data.forEach(element => { %>
+        <h2>Question: <%= element.question %></h2>
+        <p>Answer: <%= element.answer %></p>
+    <% }) %>
+    <form action="/" method="post">
+        <input type="text" placeholder="Question" name="inputQuestion">
+        <!-- <input type="text" placeholder="Answer" name="inputAnswer"> -->
+        <button type="submit">Ask</button>
+    </form>
+</body>
+</html
